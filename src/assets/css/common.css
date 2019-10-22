@@ -1,0 +1,213 @@
+.el-loading-spinner .path {
+  stroke: #f80;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: #F28C18;
+}
+
+.el-select .el-input__inner:focus {
+  border-color: #F28C18;
+  color: #F28C18;
+  background: rgba(255, 247, 237, 1);
+}
+
+.el-select-dropdown__item.selected {
+  color: #F28C18;
+}
+
+.el-table__header .has-gutter tr th {
+  background-color: #F5F6F7;
+}
+
+.el-table--small td {
+  padding: 0.16rem 0;
+}
+
+.el-table .descending .sort-caret.descending {
+  border-top-color: #F28C18;
+}
+
+.el-table .ascending .sort-caret.ascending {
+  border-bottom-color: #F28C18;
+}
+
+/* team */
+.team .el-dialog__body {
+  padding: 0.2rem 0.01rem;
+  /* max-width: 10.5rem; */
+  width: 100%;
+}
+
+.el-dialog__headerbtn {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+  background: #f79727;
+  border-radius: 100px;
+  vertical-align: middle;
+  z-index: 4444;
+}
+.el-dialog__headerbtn:hover .el-dialog__close{
+  color: #fff;
+}
+
+.el-dialog__headerbtn .el-dialog__close {
+  color: #fff;
+}
+
+.el-dialog {
+  border-radius: 0.05rem;
+}
+
+/* mytest */
+.mytest .el-table .tableRow {
+  height: 0.77rem;
+}
+
+.mytest .el-table .tableRow:hover .look {
+  display: block;
+}
+
+.mytest .el-table .tableRow:hover td:nth-of-type(4) {
+  color: #FE7B00;
+}
+
+.mytest .el-table .tableRow:hover td:nth-of-type(5) {
+  color: #FE7B00;
+}
+
+.mytest .el-table .tableRow:hover td {
+  background-color: initial !important;
+  background: none !important;
+  border: none !important;
+  position: relative;
+  z-index: 10;
+}
+
+.mytest .el-table .tableRow {
+  position: relative;
+}
+
+.mytest .el-table .tableRow:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  height: 0.75rem;
+  width: 99.5%;
+  z-index: 9;
+}
+.mytest .el-table .tableRow:hover:after {
+  border: 1px solid #FE7B00;
+}
+
+.mytest .el-select-dropdown {
+  top: 0.53rem !important;
+}
+
+
+.trends .el-table .tableRow {
+  height: 0.78rem;
+}
+
+.trends .el-table .tableRow:hover .look {
+  display: block;
+  color: #FE7B00;
+}
+.trends .el-table .tableRow:hover td:nth-of-type(1) {
+  color: #FE7B00;
+}
+.trends .el-table .tableRow:hover td:nth-of-type(3) {
+  color: #FE7B00;
+  font-weight:bold;
+}
+
+.trends .el-table .tableRow:hover td:nth-of-type(6) {
+  color: #FE7B00;
+  font-weight:bold;
+}
+.trends .el-table .tableRow td:nth-of-type(5) {
+ text-decoration: underline;
+}
+
+.trends .el-table .tableRow td:nth-of-type(6) {
+  text-decoration: underline;
+}
+
+.trends .el-table .tableRow:hover td {
+  background-color: initial !important;
+  background: none !important;
+  border: none !important;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.trends .el-table .tableRow {
+  position: relative;
+}
+
+.trends .el-table .tableRow:after {
+  position: absolute;
+  left: 0;
+  content: "";
+  height: 0.75rem;
+  width: 99.5%;
+  z-index: 9;
+  
+}
+.trends .el-table .tableRow:hover:after {
+  border: 1px solid #FE7B00;
+}
+
+.trends .el-select-dropdown {
+  top: 0.53rem !important;
+}
+ 
+.upload .el-upload {
+  width: 100%
+}
+
+.upload .el-upload-list {
+  background: rgba(245, 246, 248, 1);
+  border: 0.01rem dotted rgba(228, 228, 228, 1);
+  border-radius: 0.02rem;
+}
+
+.upload .el-upload-list li {
+  border: #F79727 0.01rem solid;
+  width: 0.6rem;
+  display: inline-block;
+  margin: 0.1rem;
+}
+
+.el-radio .el-radio__inner:hover {
+  border-color: #f79727;
+}
+.el-radio__input.is-checked .el-radio__inner {
+  border-color: #f79727;
+  background: #f79727;
+}
+.el-radio__input.is-checked+.el-radio__label {
+  color: #f79727;
+}
+
+.el-input .el-input__inner:focus {
+  border-color: #f79727;
+}
+
+/* message提示框 */
+.el-message .el-icon-success,
+.el-message .el-message__icon,
+.unpload-message.el-message .el-message__icon,
+.limit-message.el-message .el-message__icon  {
+  font-size: 0.16px;
+}
+/* 自定义弹框高度 */
+.dialog-height {
+  height: 606px !important;
+  /* position: relative; */
+}

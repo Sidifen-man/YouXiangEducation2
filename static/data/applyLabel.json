@@ -1,0 +1,231 @@
+{
+  "addSuperiority":
+  [
+    {
+        "prop": "spirit",
+        "title": "精神追求类优势",
+        "desc": "帮助我们与意义感和宇宙万物连接的优势",
+        "children": [{
+          "label": "欣赏美和卓越",
+          "prop": "balanced",
+          "imgsrc": "./static/images/superiority/select/icon1.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon1.png"
+        },{
+          "label": "感恩",
+          "prop": "thankful",
+          "imgsrc": "./static/images/superiority/select/icon2.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon2.png"
+        },{
+          "label": "乐观",
+          "prop": "optimistic",
+          "imgsrc": "./static/images/superiority/select/icon3.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon3.png"
+        },{
+          "label": "幽默",
+          "prop": "humorous",
+          "imgsrc": "./static/images/superiority/select/icon4.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon4.png"
+        },{
+          "label": "灵性",
+          "prop": "spiritrual",
+          "imgsrc": "./static/images/superiority/select/icon5.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon5.png"
+        }]
+      },{
+        "prop": "relationship",
+        "title": "人际交往类优势",
+        "desc": "帮助我们关注他人，成为别人的朋友",
+        "children": [{
+          "label": "热情",
+          "prop": "enthusiastic",
+          "imgsrc": "./static/images/superiority/select/icon6.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon6.png"
+        },{
+          "label": "勇敢",
+          "prop": "brave",
+          "imgsrc": "./static/images/superiority/select/icon7.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon7.png"
+        },{
+          "label": "坚毅",
+          "prop": "fortitude",
+          "imgsrc": "./static/images/superiority/select/icon8.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon8.png"
+        },{
+          "label": "坦诚",
+          "prop": "frank",
+          "imgsrc": "./static/images/superiority/select/icon9.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon9.png"
+        }]
+      },{
+        "prop": "emotion",
+        "title": "情感类优势",
+        "desc": "帮助我们用意志力完成目标，尤其在遭遇外在困难和内心挫败",
+        "children": [{
+          "label": "团队精神",
+          "prop": "teamSpirit",
+          "imgsrc": "./static/images/superiority/select/icon10.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon10.png"
+        },{
+          "label": "公平",
+          "prop": "fair",
+          "imgsrc": "./static/images/superiority/select/icon11.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon11.png"
+        },{
+          "label": "统率",
+          "prop": "command",
+          "imgsrc": "./static/images/superiority/select/icon12.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon12.png"
+        }]
+      },{
+        "prop": "social",
+        "title": "社交类优势",
+        "desc": "帮助我们用意志力完成目标，尤其在遭遇外在困难和内心挫败1",
+        "children":[{
+          "label": "深度交往",
+          "prop": "deepCommunication",
+          "imgsrc": "./static/images/superiority/select/icon13.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon13.png"
+        },{
+          "label": "社交智慧",
+          "prop": "wisdom",
+          "imgsrc": "./static/images/superiority/select/icon14.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon14.png"
+        },{
+          "label": "友善",
+          "prop": "friendly",
+          "imgsrc": "./static/images/superiority/select/icon15.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon15.png"
+        }]
+      },{
+        "prop": "emotion1",
+        "title": "情感类优势",
+        "desc": "帮助我们用意志力完成目标，尤其在遭遇外在困难和内心挫败1",
+        "children": [{
+          "label": "宽容",
+          "prop": "tolerant",
+          "imgsrc": "./static/images/superiority/select/icon16.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon16.png"
+        },{
+          "label": "谦虚",
+          "prop": "modest",
+          "imgsrc": "./static/images/superiority/select/icon17.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon17.png"
+        },{
+          "label": "谨慎",
+          "prop": "prudent",
+          "imgsrc": "./static/images/superiority/select/icon18.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon18.png"
+        },{
+          "label": "自我控制",
+          "prop": "selfControl",
+          "imgsrc": "./static/images/superiority/select/icon19.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon19.png"
+           }]
+        },{
+        "prop": "wisdoms",
+        "title": "智慧类优势",
+        "desc": "帮助我们用意志力完成目标，尤其在遭遇外在困难和内心挫败1",
+        "children":[{
+          "label": "创意",
+          "prop": "originality",
+          "imgsrc": "./static/images/superiority/select/icon20.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon20.png"
+        },{
+          "label": "好奇心",
+          "prop": "curiosity",
+          "imgsrc": "./static/images/superiority/select/icon21.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon21.png"
+        },{
+          "label": "判断力",
+          "prop": "judgment",
+          "imgsrc": "./static/images/superiority/select/icon22.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon22.png"
+        },{
+          "label": "喜爱学习",
+          "prop": "learning",
+          "imgsrc": "./static/images/superiority/select/icon23.png",
+          "imgsrcSed": "./static/images/superiority/selected/icon23.png"
+        },{
+          "label": "洞察力",
+          "prop": "insight",
+          "imgsrc": "./static/images/superiority/select/icon24.png",
+         "imgsrcSed": "./static/images/superiority/selected/icon24.png"
+        }]
+      }
+   ],
+  "addOperate":
+  [
+    {
+        "light": "",
+        "gery": "",
+        "prop": "1",
+        "showLight":false,
+        "tipTitle": "判断性思维",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+      },{
+        "light": "",
+        "gery": "",
+        "prop": "2",
+        "showLight":false,
+        "tipTitle": "沟通技能",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+      },{
+        "light": "",
+        "gery": "",
+        "prop": "3",
+        "showLight":false,
+        "tipTitle": "团队协作",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+      },{
+        "light": "",
+        "gery": "",
+        "prop": "4",
+        "showLight":false,
+        "tipTitle": "创造力",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+      },{
+        "light": "",
+        "gery": "",
+        "prop": "5",
+        "showLight":false,
+        "tipTitle": "世界公民",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+      },{
+        "light": "",
+        "gery": "",
+        "prop": "6",
+        "showLight":false,
+        "tipTitle": "自我认知",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+      },{
+        "light": "",
+        "gery": "",
+        "prop": "7",
+        "showLight":false,
+        "tipTitle": "自我管理",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+      },{
+        "light": "",
+        "gery": "",
+        "prop": "8",
+        "showLight":false,
+        "tipTitle": "社会意识",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+      },{
+        "light": "",
+        "gery": "",
+        "prop": "9",
+        "showLight":false,
+        "tipTitle": "关系建立",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+        },{
+        "light": "",
+        "gery": "",
+        "prop": "10",
+        "showLight":false,
+        "tipTitle": "决策能力",
+        "tipDesc": "遇到问题时主动分析搜集信息，经过辨证思考后采取行动的技能"
+      }
+   ]
+
+}

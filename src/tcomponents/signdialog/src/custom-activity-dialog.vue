@@ -1,0 +1,337 @@
+<template>
+  <el-dialog
+    :lock-scroll="true"
+    custom-class="custom-activity"
+    :visible.sync="dialogVisible" :close-on-click-modal='false'>
+    <div class="title" slot="title">
+      自定义活动
+    </div>
+    <el-form ref="form" :model="form" label-width="120px">
+      <el-form-item label="活动名称：">
+        <el-input v-model="form.name" placeholder="活动名称"></el-input>
+      </el-form-item>
+      <el-form-item label="活动方：">
+        <el-input v-model="form.activeParty" placeholder="请填写活动方名称"></el-input>
+      </el-form-item>
+      <el-form-item label="活动地点：">
+        <el-select v-model="form.regionType" placeholder="校内/校外">
+          <el-option label="校内" value="1"></el-option>
+          <el-option label="校外" value="2"></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item label="活动城市：">
+        <el-input v-model="form.city" placeholder="请填写活动城市"></el-input>
+      </el-form-item>
+      <el-form-item label="活动类型：">
+        <el-select v-model="form.actType" placeholder="个人发明/研究项目">
+          <el-option label="个人发明" value="1"></el-option>
+          <el-option label="研究项目" value="2"></el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item class="item-major" label="学科/专业类型：">
+        <el-select v-model="form.majorCode" placeholder="选择学科/专业类型">
+          <el-option label="学科" value="1"></el-option>
+          <el-option label="专业类型" value="2"></el-option>
+        </el-select>
+        <div class="tip"><i class="el-icon-warning"></i><span>必填项</span></div>
+      </el-form-item>
+      <el-form-item label="活动形式：">
+        <el-radio-group v-model="form.actWay">
+          <el-radio border label="线上"></el-radio>
+          <el-radio border label="线下"></el-radio>
+          <el-radio border label="混合"></el-radio>
+        </el-radio-group>
+      </el-form-item>
+      <el-form-item label="活动方式：">
+        <el-radio-group v-model="form.teamMode">
+          <el-radio border label="个人"></el-radio>
+          <el-radio border label="团队"></el-radio>
+        </el-radio-group>
+      </el-form-item>
+      <el-form-item label="活动成果：">
+        <el-radio-group v-model="form.resultType">
+          <el-radio border label="作品"></el-radio>
+          <el-radio border label="证书"></el-radio>
+          <el-radio border label="奖状"></el-radio>
+          <el-radio border label="其它"></el-radio>
+        </el-radio-group>
+      </el-form-item>
+      <el-form-item label="活动周期：" class="muilty-form-item">
+        <el-radio-group v-model="form.periodType">
+          <el-radio border label="仅这次"></el-radio>
+          <el-radio border label="我会持续参与"></el-radio>
+        </el-radio-group>
+        <div class="date-range">
+          <el-date-picker type="date" placeholder="选择日期" v-model="form.dateFrom"></el-date-picker>
+          <span class="line">-</span>
+          <el-date-picker type="date" placeholder="选择日期" v-model="form.dateTo"></el-date-picker>
+        </div>
+      </el-form-item>
+      <el-form-item label="所需时间：">
+        <el-select v-model="form.hours" placeholder="小时/周">
+          <el-option
+            v-for="item in needTimeOptions"
+            :label="item.label"
+            :value="item.value"
+            :key="item.value">
+          </el-option>
+        </el-select>
+      </el-form-item>
+      <el-form-item class="form-textarea" label="活动介绍：">
+        <div>
+          <el-input
+            v-model="form.intro"
+            type="textarea"
+            maxlength="140"
+            ref="textarea"
+            @focus="foucsing=true"
+            @blur="foucsing=false">
+          </el-input>
+          <span @click="handleFocus" v-show="showPlaceholder" class="place-holder"><span class="text">用140字以内的描述来介绍你的作品</span></span>
+          <div class="page text-page">
+            <span class="page-left">{{ form.desc ? form.desc.length : 0 }}</span>
+            <span class="page-mid">/</span>
+            <span class="page-right">140</span>
+          </div>
+        </div>
+      </el-form-item>
+    </el-form>
+    <div class="submit-btn">
+      <button @click="onSubmit">添加到活动计划</button>
+    </div>
+  </el-dialog>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        foucsing: false,
+        dialogVisible: false,
+        form: {
+          name: '',
+          activeParty: '',
+          regionType: '',
+          city: '',
+          actType: '',
+          majorCode: '',
+          periodType: '',
+          actWay: '',
+          teamMode: '',
+          resultType: '',
+          intro: '',
+          hours: '',
+          dateFrom: '',
+          dateTo: ''
+        },
+        needTimeOptions:[{
+          label: '10小时/周',
+          value: '10'
+        },{
+          label: '20小时/周',
+          value: '20'
+        },{
+          label: '30小时/周',
+          value: '30'
+        },{
+          label: '40小时/周',
+          value: '40'
+        }]
+      };
+    },
+    computed: {
+      showPlaceholder() {
+        return !this.form.desc && !this.foucsing;
+      },
+    },
+    methods: {
+      show() {
+        this.dialogVisible = true;
+      },
+      handleFocus() {
+        this.$refs.textarea.focus()
+      },
+      onSubmit() {
+
+      }
+    }
+  };
+</script>
+<style lang="scss">
+  .custom-activity{
+    height: 8rem;
+    width: 7rem;
+    min-height: 750px;
+    .el-dialog__header {
+      height: 0.6rem;
+      line-height: 0.6rem;
+      font-size: 0.16rem;
+      color: #333;
+      font-weight: bold;
+      padding: 0 0 0 0.44rem;
+      border-bottom: 1px solid #E4E8ED;
+      .title {
+        position: relative;
+      }
+      .title:before {
+        position: absolute;
+        content: "";
+        width: 0.04rem;
+        height: 0.18rem;
+        left: -0.1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #F79727;
+        margin-right: 0.14rem;
+        border-radius: 0.2rem;
+      }
+    }
+    .el-dialog__body {
+      padding: 0.2rem 0 0.17rem 0;
+      box-sizing: border-box;
+      margin: 0 1.57rem 0 0.72rem;
+      .el-form {
+        font-size: 0;
+        .el-input--small .el-input__inner  {
+          border-radius: 0.03rem;
+          height: 0.32rem;
+          line-height: 0.32rem
+        }
+        .el-select {
+          width: 100%;
+        }
+        .el-form-item {
+          margin-bottom: 0.12rem;
+          .el-form-item__label {
+            line-height: 0.32rem;
+          }
+          .el-form-item__content {
+            height: 0.32rem;
+            line-height: 0.32rem!important;
+          }
+          .el-input.el-input--small {
+            line-height: 0.3rem;
+            height: 0.32rem;
+          }
+        }
+        .item-major {
+          position: relative;
+          .tip {
+            position: absolute;
+            line-height: 0.19rem;
+            right: -0.7rem;
+            top: 0.07rem;
+            color: #FF3B3B;
+            font-size: 0;
+            .el-icon-warning {
+              font-size: 0.18rem;
+              vertical-align: middle;
+              margin-right: 0.06rem;
+            }
+            span {
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 0.12rem;
+            }
+          }
+        }
+        .el-radio-group {
+          .el-radio.is-bordered {
+            margin-right: 0.05rem;
+            padding-left: 0;
+            padding-right: 0;
+            text-align: center;
+            width: 0.55rem;
+            padding: 0 0.14rem;
+            height: 0.32rem;
+            line-height: 0.3rem;
+            .el-radio__label {
+              padding: 0;
+            }
+          }
+          .el-radio__input,
+          .el-radio__inner {
+            height: 0;
+            width: 0;
+          }
+          .el-radio.is-bordered.is-checked {
+            border-color: #F79727;
+            background-color: #FFF7ED;
+          }
+        }
+        .muilty-form-item {
+          height: 0.72rem;
+          .el-radio.is-bordered {
+            width: 1.24rem;
+            margin-bottom: 0.1rem;
+          }
+          .date-range {
+            .el-date-editor {
+              width: 1.24rem;
+            }
+            .line {
+              color: #DCE0E5;
+            }
+          }
+
+        }
+        .form-textarea {
+          height: 1rem;
+        }
+        .el-textarea {
+          height: 1rem;
+          border-radius: 0.03px;
+          .el-textarea__inner {
+            border-color: #DCE0E6;
+            background-color: #fff;
+            height: 100%;
+            resize: none;
+          }
+          .el-textarea__inner:focus {
+            border-color:#F28C18;
+          }
+        }
+        .place-holder {
+          font-size: 0.12rem;
+          line-height: 0.12rem;
+          top: 0.1rem;
+          position: absolute;
+          left: 0.2rem;
+          color: #999;
+        }
+        .text-page {
+          position: absolute;
+          bottom: 0.08rem;
+          right: 0.15rem;
+          line-height: 0.16rem;
+          text-align: right;
+          .page-left,
+          .page-mid,
+          .page-right {
+            font-size: 12px;
+            color: #ccc;
+          }
+
+          .page-left {
+            color: #f79727;
+          }
+        }
+      }
+      .submit-btn {
+        text-align: center;
+        button {
+          width: 1.8rem;
+          height: 0.5rem;
+          line-height: 0.5rem;
+          background:linear-gradient(-90deg,rgba(255,183,38,1),rgba(255,129,38,1));
+          border-radius: 0.25rem;
+          font-weight:bold;
+          color:rgba(255,255,255,1);
+          text-align: center;
+          font-size: 0.16rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+</style>

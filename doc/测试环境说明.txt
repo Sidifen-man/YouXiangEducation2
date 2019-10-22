@@ -1,0 +1,66 @@
+
+bestu 环境说明:
+--------------------------------------------------------------------
+开发环境：
+    1. 数据库 192.168.1.21 bestu，root/hello123  (从生产库中导入，原来的开发数据库更名为 bestu-dev)
+    2. 版本库：后端  https://192.168.1.16/svn/国臣/bestu-operate
+    3. 版本库：前端  https://192.168.1.16/svn/国臣/bestu-front
+    
+测试环境：
+    1. 后端程序：bestu-admin
+       访问： http://192.168.1.4/admin
+    
+       服务器: 192.168.1.4
+       linux 登录: bestu/Bestu+123
+       jdk8
+       tomcat 8.5
+            /home/bestu/apps/bestu-admin
+       
+            启动: 
+            nohup ./test_startup.sh &
+            
+            停止: 
+            ./test_shutdown.sh
+       
+       nignx
+            配置: /etc/nginx/conf.d/bestu.conf
+            
+            # 启动 nginx
+            nginx -c /etc/nginx/nginx.conf
+            
+            # 其它
+            nginx -s reload  ：修改配置后重新加载生效
+            nginx -s reopen  ：重新打开日志文件
+            nginx -t -c /etc/nginx/nginx.conf 测试nginx配置文件是否正确
+            
+            # 关闭 nginx：
+            nginx -s stop  :快速停止nginx
+            nginx -s quit  ：完整有序的停止nginx            
+       
+测试用户：
+    正式环境：www.bestucareer.com
+    学生: lianwuyun222/111 
+    教师: lianwuyun333/111
+    
+    后台: admin/adminbestu
+    
+    测试环境：http://localhost:8000
+    学生: lianwuyun222/123456 
+    教师: lianwuyun333/123456
+    
+    后台: admin/123456
+    
+nodejs 运行
+--------------------------------------------
+cd E:\projects\eclipse\workspace_neon\bestU_master\bestu-front
+cnpm run dev
+
+登录: 
+http://localhost:8000/#/login/tokien
+http://localhost:8000/#/login/lianwuyun222|123456
+http://localhost:8000/#/login/lianwuyun333|123456
+http://localhost:8000/#/login/12e5b97a5d68cd423f3be2843fb7e462
+http://course.bestucareer.com:8780/#/login/12e5b97a5d68cd423f3be2843fb7e462
+
+注销
+http://localhost:8000/#/logout

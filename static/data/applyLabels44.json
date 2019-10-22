@@ -1,0 +1,156 @@
+{
+  "addSuperiority":
+  [
+    {
+        "prop": "spirit",
+        "title": "精神追求类优势",
+        "desc": "帮助我们与意义感和宇宙万物连接的优势",
+        "children": [{
+          "label": "欣赏美和卓越",
+          "prop": "balanced",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "感恩",
+          "prop": "thankful",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "乐观",
+          "prop": "optimistic",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "幽默",
+          "prop": "humorous",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "灵性",
+          "prop": "spiritrual",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        }]
+      },{
+        "prop": "relationship",
+        "title": "人际交往类优势",
+        "desc": "帮助我们关注他人，成为别人的朋友",
+        "children": [{
+          "label": "热情",
+          "prop": "enthusiastic",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "勇敢",
+          "prop": "brave",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "坚毅",
+          "prop": "fortitude",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "坦诚",
+          "prop": "frank",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        }]
+      },{
+        "prop": "emotion",
+        "title": "情感类优势",
+        "desc": "帮助我们用意志力完成目标，尤其在遭遇外在困难和内心挫败",
+        "children": [{
+          "label": "团队精神",
+          "prop": "teamSpirit",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "公平",
+          "prop": "fair",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "统率",
+          "prop": "command",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        }]
+      },{
+        "prop": "social",
+        "title": "社交类优势",
+        "desc": "帮助我们用意志力完成目标，尤其在遭遇外在困难和内心挫败1",
+        "children":[{
+          "label": "深度交往",
+          "prop": "deepCommunication",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "社交智慧",
+          "prop": "wisdom",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "友善",
+          "prop": "friendly",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        }]
+      },{
+        "prop": "emotion1",
+        "title": "情感类优势",
+        "desc": "帮助我们用意志力完成目标，尤其在遭遇外在困难和内心挫败1",
+        "children": [{
+          "label": "宽容",
+          "prop": "tolerant",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "谦虚",
+          "prop": "modest",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "谨慎",
+          "prop": "prudent",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "自我控制",
+          "prop": "selfControl",
+          "imgsrc": "",
+          "imgsrcSed": ""
+           }]
+        },{
+        "prop": "wisdoms",
+        "title": "智慧类优势",
+        "desc": "帮助我们用意志力完成目标，尤其在遭遇外在困难和内心挫败1",
+        "children":[{
+          "label": "创意",
+          "prop": "originality",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "好奇心",
+          "prop": "curiosity",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "判断力",
+          "prop": "judgment",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "喜爱学习",
+          "prop": "learning",
+          "imgsrc": "",
+          "imgsrcSed": ""
+        },{
+          "label": "洞察力",
+          "prop": "insight",
+          "imgsrc": "",
+         "imgsrcSed": ""
+        }]
+      }
+   ]
+}
